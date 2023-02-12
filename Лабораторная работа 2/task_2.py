@@ -29,7 +29,7 @@ class Book(BaseModel):
 
 
 class Library(BaseModel):
-    books: List[Book] = []
+    books: List[Book] = None
 
     def get_next_book_id(self):
         if not self.books:
